@@ -6,11 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <style>
+        img:hover{
+            /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+            transition: all 5s ease-in 5s;
+            transform: scale(1 );
+        }
+        .main_container{
+
+        }
+        .first >.second >.third >.fourth{
+            height: 100px;
+
+            width: 100px;
+            border: 1px solid black;
+        }
+        .second_row{
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="main">
             <h1>hello world</h1>
+            <img onmouseenter="run();" onmouseleave="
+            stop();" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwOfbpKwLRP91JD52SV4ptdAUSqhcFcFYjDg&s" alt="">
+            <button>onClick</button>
+        </div>
+        <ul >
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+        </ul>
+    </div>
+    <div class="main_container">
+        <div class="first_row">
+            <div class="first" Bac >
+
+            </div>
+            <div class="second">
+
+            </div>
+            <div class="third"></div>
+            <div class="fourth">
+
+            </div>
+        </div>
+
+        <div class="second_row">
+            <div>
+
+            </div>
         </div>
     </div>
     
