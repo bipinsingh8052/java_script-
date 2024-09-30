@@ -20,6 +20,7 @@ function dom()
 
 function img()
 {
-    let imgage =querySelector('.img_section');
-    console.log(imgage);
+    // let imgage =querySelector(".img_section");
+    console.log("mohit")
+    // console.log(imgage);
 }
