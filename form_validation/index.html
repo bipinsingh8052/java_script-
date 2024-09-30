@@ -10,13 +10,13 @@
     <form action="#
     ">
     <div class="input"></div>
-    <input type="text" id="text" onblur=" b();">
+    <input type="text" id="text" onblur=" b('.input','#text');">
     <div class="passworderr"></div>
-    <input type="number" id="num">
+    <input type="number" id="num" onblur=" b('.passworderr','#num')">
     <div class="numerror"></div>
-    <input type="password" id="password">
+    <input type="password" id="password" onblur=" b('.numerror','#password')">
     <div class="lasterror"></div>
-    <input type="text" id="black" value=" ">
+    <input type="email" id="black"  onblur=" b('.lasterror','#black')">
     <button type="submit" onclick="return data();">submit</button>
 </form>
 </body>
