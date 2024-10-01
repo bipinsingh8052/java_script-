@@ -74,19 +74,24 @@ function data(){
 // }else{
 //     show.style.display="none";
 // }
-function b(b,a){
-    let name = document.querySelector("#a");
+function b(a,b){
+    let name = document.querySelector(`${b}`);
     console.log(name);
     
-    let erroeinput = document.querySelector(".b");
+    let erroeinput = document.querySelector(`${a}`);
     console.log(erroeinput);
     name.style.border="2px solid black";
     name.style.outlineColor="black";
     // erroeinput.style.display="none";
     erroeinput.innerHTML="";
-    console.log(name);
-    console.log(erroeinput);
+    // console.log(name);
+    // console.log(erroeinput);
 }
+
+
+
+
+
 // function o(){
 //     let name = document.querySelector("#num");
 //     let erroeinput = document.querySelector(".passworderr");
