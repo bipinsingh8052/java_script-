@@ -1,5 +1,3 @@
-
-
 function data(){
     
     let input=document.querySelector("#text");
@@ -23,35 +21,56 @@ function data(){
             // window.alert("Enter the name:");
             return false;
     }
-    else if(num.value == ""){
-        let show=document.querySelector(".passworderr");
-        show.innerHTML = "your con't inter the name";
-        show.style.color="black";
-        input.style.border="2px solid red";
-        input.style.outlineColor="red";
-        console.log(show);
-            // window.alert("Enter the name:");
-            return false;
+    // else if(num.value == ""){
+    //     let show=document.querySelector(".passworderr");
+    //     show.innerHTML = "your con't inter the name";
+    //     show.style.color="black";
+    //     input.style.border="2px solid red";
+    //     input.style.outlineColor="red";
+    //     console.log(show);
+    //         // window.alert("Enter the name:");
+    //         return false;
+    // }
+    // else if(pass.value == ""){
+    //     let show=document.querySelector(".numerror");
+    //     show.innerHTML = "your con't inter the name";
+    //     show.style.color="black";
+    //     input.style.border="2px solid red";
+    //     input.style.outlineColor="red";
+    //     console.log(show);
+    //         // window.alert("Enter the name:");
+    //         return false;
+    // }
+    // else if(black.value == ""){
+    //     let show=document.querySelector(".lasterror");
+    //     show.innerHTML = "your con't inter the name";
+    //     show.style.color="black";
+    //     input.style.border="2px solid red";
+    //     input.style.outlineColor="red";
+    //     console.log(show);
+    //         // window.alert("Enter the name:");
+    //         return false;
+    // }
+    else if(!(black.includes('@') && black.includes(".com"))){
+        document.querySelector('.input').innerHTML = "Please enter valid email";
+        let selectname = document.querySelector('#email');
+        selectname.style.borderColor = "red"
+        selectname.style.outlineColor = "red"
+        return false;
     }
-    else if(pass.value == ""){
-        let show=document.querySelector(".numerror");
-        show.innerHTML = "your con't inter the name";
-        show.style.color="black";
-        input.style.border="2px solid red";
-        input.style.outlineColor="red";
-        console.log(show);
-            // window.alert("Enter the name:");
-            return false;
+    else if(num.length !== 10){
+        document.querySelector('#errormobile').innerHTML = "mobile number should be 10 digit";
+        let selectname = document.querySelector('#mobile');
+        selectname.style.borderColor = "red"
+        selectname.style.outlineColor = "red"
+        return false;
     }
-    else if(black.value == ""){
-        let show=document.querySelector(".lasterror");
-        show.innerHTML = "your con't inter the name";
-        show.style.color="black";
-        input.style.border="2px solid red";
-        input.style.outlineColor="red";
-        console.log(show);
-            // window.alert("Enter the name:");
-            return false;
+    else if(isNaN(num)){
+        document.querySelector('#errormobile').innerHTML = "mobile number should integer only";
+        let selectname = document.querySelector('#mobile');
+        selectname.style.borderColor = "red"
+        selectname.style.outlineColor = "red"
+        return false;
     }
 
     // else if(pass.type="password"){
@@ -63,6 +82,9 @@ function data(){
     //     pass.type="password";
     //     return false;
     // }
+
+
+    // else if()
     return true;
     
 }
