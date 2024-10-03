@@ -4,6 +4,7 @@ function data(){
     let num =document.querySelector("#num");
     let black =document.querySelector("#black");
     let pass =document.querySelector("#password");
+    let cpass =document.querySelector("#cpassword");
     // black.value=input.value+num.value;
     // console.log(input.value);
 
@@ -13,7 +14,7 @@ function data(){
     
     if(input.value == ""){
         let show=document.querySelector(".input");
-        show.innerHTML = "your con't inter the name";
+        show.innerHTML = "your con't Enter the name";
         show.style.color="black";
         input.style.border="2px solid red";
         input.style.outlineColor="red";
@@ -21,6 +22,41 @@ function data(){
             // window.alert("Enter the name:");
             return false;
     }
+    else if(isNaN(num.value)){
+        document.querySelector('.passworderr').innerHTML = "mobile number should integer only";
+        let selectname = document.querySelector('#mobile');
+        selectname.style.borderColor = "red"
+        selectname.style.outlineColor = "red"
+        return false;
+    }
+    else if(num.value.length !== 10){
+        document.querySelector('.passworderr').innerHTML = "mobile number should be 10 digit";
+        let selectname = document.querySelector('#mobile');
+        selectname.style.borderColor = "red"
+        selectname.style.outlineColor = "red"
+        return false;
+    }
+    else if(!(pass.value=== cpass.value)){
+        pass.value="";
+        cpass.value="";
+        pass.focus();
+    }
+    else if(!(pass.value.match(/[1234567890]/)&&(pass.value.match(/[qwertyuiopasdfghjklzxcvbnm]/))&&(pass.value.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/))&&(pass.value.match(/[!@#$%^&*~``';]/))){
+        let show=document.querySelector(".numerror");
+        show.innerHTML = "your pasword is not strong please write again.";
+        show.style.color="black";
+        input.style.border="2px solid red";
+        input.style.outlineColor="red";
+        console.log(show);
+    }
+    else if(!(black.value.includes('@') && black.value.includes(".com"))){
+        document.querySelector('.lasterror').innerHTML = "Please enter valid email";
+        let selectname = document.querySelector('#email');
+        selectname.style.borderColor = "red";
+        selectname.style.outlineColor = "red";
+        return false;
+    }
+    
     // else if(num.value == ""){
     //     let show=document.querySelector(".passworderr");
     //     show.innerHTML = "your con't inter the name";
@@ -51,27 +87,8 @@ function data(){
     //         // window.alert("Enter the name:");
     //         return false;
     // }
-    else if(!(black.includes('@') && black.includes(".com"))){
-        document.querySelector('.input').innerHTML = "Please enter valid email";
-        let selectname = document.querySelector('#email');
-        selectname.style.borderColor = "red"
-        selectname.style.outlineColor = "red"
-        return false;
-    }
-    else if(num.length !== 10){
-        document.querySelector('#errormobile').innerHTML = "mobile number should be 10 digit";
-        let selectname = document.querySelector('#mobile');
-        selectname.style.borderColor = "red"
-        selectname.style.outlineColor = "red"
-        return false;
-    }
-    else if(isNaN(num)){
-        document.querySelector('#errormobile').innerHTML = "mobile number should integer only";
-        let selectname = document.querySelector('#mobile');
-        selectname.style.borderColor = "red"
-        selectname.style.outlineColor = "red"
-        return false;
-    }
+    
+   
 
     // else if(pass.type="password"){
 
