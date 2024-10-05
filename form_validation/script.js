@@ -40,14 +40,20 @@ function data(){
         pass.value="";
         cpass.value="";
         pass.focus();
+        return false;
     }
-    else if(!(pass.value.match(/[1234567890]/)&&(pass.value.match(/[qwertyuiopasdfghjklzxcvbnm]/))&&(pass.value.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/))&&(pass.value.match(/[!@#$%^&*~``';]/))){
+    else if(!(pass.value.match(/[1234567890]/)
+        && pass.value.match(/[qwertyuiopasdfghjklzxcvbnm]/)
+       && pass.value.match(/[QWERTYUIOPASDFGHJKLZXCVBNM]/)
+       && pass.value.match(/[!@#$%^&*~``';]/)))
+        {
         let show=document.querySelector(".numerror");
         show.innerHTML = "your pasword is not strong please write again.";
         show.style.color="black";
         input.style.border="2px solid red";
         input.style.outlineColor="red";
-        console.log(show);
+        // console.log(show);
+        return false;
     }
     else if(!(black.value.includes('@') && black.value.includes(".com"))){
         document.querySelector('.lasterror').innerHTML = "Please enter valid email";
