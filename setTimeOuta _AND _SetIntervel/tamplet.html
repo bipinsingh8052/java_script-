@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 1000px;
+            
+            border: 2px solid black;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        .container article {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        border: 2px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .container article div img {
+            height: 500px;
+            width: 1000px;
+            /* transition: ; */
+        }
+    </style>
 </head>
-<body>
-    <form>
+<body onload="slider()">
+    <!-- <form>
      <input type="text" id="name" placeholder="enetr your name">
      <input type="text" id="phone" placeholder="enetr your phone number">
      <input type="text" id="email" placeholder="enetr your email">
@@ -14,6 +37,24 @@
      <input type="text" id="address" placeholder="enetr your name">
      <input type="text" id="image" placeholder="enetr image">
      </form>
+     <h1></h1> -->
+     <div class="container">
+        <article>
+            
+            <div id="first">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwOfbpKwLRP91JD52SV4ptdAUSqhcFcFYjDg&s" alt="">
+            </div>
+            <div id="second">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXTPuiJmJPHb-4ES2ESNMTU61N2Y1-vANe2w&s" alt="">
+    
+            </div>
+            <div id="third">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmVkb2k9Kejuob7WfAoysNPZIBInOb3lVPaKYIYT7vFo_UI-pqB2SZh7nDsYSD-Kua0lI&usqp=CAU" alt="">
+            </div>
+        </article>
+
+        
+     </div>
      <script src="templet script.js"></script>
 </body>
-</html>
+</html> -->
