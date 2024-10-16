@@ -62,4 +62,24 @@ console.log(a);
     // middle add
     a.splice(4,0,9);
     console.log(a);
+    a.splice(4,1,98765432);
+    console.log(a);
 // console.log(a.length);
+
+
+
+let b=[1,2,3,4,5,6,7,89,9877];
+
+// sort method
+ 
+console.log(b.sort(function(a,b){return b-a}))
+console.log(b.sort(function(a,b){return a-b}))
+
+// reverse method
+console.log(b.reverse())
+
+
+
+
+// 
+console.log("started method");
