@@ -78,8 +78,14 @@ console.log(b.sort(function(a,b){return a-b}))
 // reverse method
 console.log(b.reverse())
 
+// reduce method
+ console.log(b.reduce(function(a,b){return a+b}));
 
+// tostring method
+console.log(b.toString());
 
+// join method
+console.log(b.join(" "))
 
 // 
 console.log("started method");
