@@ -98,6 +98,30 @@ console.log(b.join(" "))
 // map method its create a new array but it take new variable
 
 // 
-let c=[1,2,3,4,5,6,6,7,8,9];
-console.log(c.map((i)=>{return i*10}))
-console.log("started method");
+let img=[
+'https://miro.medium.com/v2/resize:fit:1400/1*VwJ4_7-Cqsl7Z_gr0Jo87A.png',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMsKGQepLuOKYPv_nETIHUd06qT5i7JQCi6HMFR4y0VnpFUfUPY3Xs16WqfhhQOx8JgvM&usqp=CAU',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFj4HJGa0Q523KlusfQQOZTsafmv3k2WC6DgmPuf2LgqANYvrL1ziCYQBSCxSGxLEGGo0&usqp=CAU',
+    'https://miro.medium.com/v2/resize:fit:1218/0*6EcaRhwDICCS8Yt5.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dYaPcmxWELY6AIrNjMBknmILxfxKd5RDjipbe6byDDr9ChROSu6i2KAq72ZdT_G6CMs&usqp=CAU'
+
+
+];
+let normal=document.querySelector(".normal");
+let button=document.querySelector("button");
+
+
+
+    console.log(normal);
+// console.log(c.map((i)=>{return i*10}))
+// console.log("started method")
+function run(){
+    normal.innerHTML = img.map((i)=>
+        `
+        <img style="width:500px;height:400px; border: 2px solid black" src="${i}" alt="image not found" > 
+
+        `
+   
+    ).join(" ");
+    console.log(normal); 
+}
