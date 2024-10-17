@@ -87,5 +87,17 @@ console.log(b.toString());
 // join method
 console.log(b.join(" "))
 
+// higher order method
+// map
+// reduce
+// number sort 
+// find
+// filter
+// foreach
+
+// map method its create a new array but it take new variable
+
 // 
+let c=[1,2,3,4,5,6,6,7,8,9];
+console.log(c.map((i)=>{return i*10}))
 console.log("started method");
