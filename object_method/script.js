@@ -102,3 +102,16 @@ nu.innerHTML= cart_info.map((cart)=>
         </div>
 `
 ).join(" ");
+
+console.log()
+nbb=98; 
+
+let btn =document.querySelector(".loading button");
+let img =document.querySelector(".loading img");
+let img_array=[
+
+]
+console.log(btn ,img);
+btn.addEventListener("click",()=>{
+    let index=math.floor(math.random()*img_array.length);
+})
