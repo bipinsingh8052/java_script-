@@ -115,3 +115,41 @@ console.log(btn ,img);
 btn.addEventListener("click",()=>{
     let index=math.floor(math.random()*img_array.length);
 })
+
+
+
+
+// destructuring object and array
+// destrucuring  means when you array and object  store a value in variable is called a function
+let obj ={
+    'a':"iyreeelo",
+    'b':"name",
+    90:9087567890,
+    7:[689,700,76980]
+}
+let 
+number=obj.b;
+console.log(number);
+let array =[9,8,8,8,8,8];
+let index=array[1];
+console.log(index);
+// what is method and function
+// when you declare any function inside the object in the function is called a method 
+// when you declare any function outside the object and as anormal function is called a function
+
+
+
+
+// function 
+// four type is function
+// 1.normal function
+// 2.arrow function
+// 3.IIFE(imedialty invoked function expression)
+
+(function(){
+    // body you write a statment
+})();
+
+let  arr=(){
+
+}
