@@ -1,34 +1,26 @@
 {
-    "product":[{
-        "id":1,
-        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s",
-        "pname":"nike",
-        "bname":"shoes",
-        "price":"₹245"
-        },
-    
-        {
-            "id":2,
-            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s",
-            "pname":"nike",
-            "bname":"shoes",
-            "price":"₹245"
-        },
-        {
-                "id":3,
-                "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s",
-                "pname":"nike",
-                "bname":"shoes",
-                "price":"₹245"
-        
-        },    
-        {
-                "id":4,
-                "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s",
-                "pname":"nike",
-                "bname":"shoes",
-              "price":"₹245"
-         }
-        ],
-    "user":[]
+  "product": [
+    {
+      "id": "2",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s",
+      "pname": "nike",
+      "bname": "shoes",
+      "price": "₹245"
+    },
+    {
+      "id": "3",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s",
+      "pname": "nike",
+      "bname": "shoes",
+      "price": "₹245"
+    },
+    {
+      "id": "4",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgPbd2MBbw3o5_yzYC_pPjoVNKUx7WCrMN3g&s",
+      "pname": "nike",
+      "bname": "shoes",
+      "price": "₹245"
+    }
+  ],
+  "user": []
 }
