@@ -28,8 +28,7 @@ async function update(id){
     document.querySelector("#imgurl").value= responise.image;
     document.querySelector("#pname").value= responise.pname;
     document.querySelector("#bname").value= responise.bname;
-    document.querySelector("#pprice").value= responise.price;
-   
+    document.querySelector("#pprice").value= responise.price  
 }
 
  function finalupdate()
@@ -58,10 +57,10 @@ function Add(){
 function finaladd()
 {
     let obj={
-        "image":document.querySelector("#imgurl").value,
-        "pname":document.querySelector("#pname").value,
-        "bname":document.querySelector("#bname").value,
-        "price":document.querySelector("#pprice").value
+        "image":document.querySelector("#imgur").value,
+        "pname":document.querySelector("#name").value,
+        "bname":document.querySelector("#kname").value,
+        "price":document.querySelector("#price").value
     }
     fetch(`http://localhost:4000/product/`,{
         method:"POST",
@@ -87,8 +86,8 @@ async function run() {
             <td>${item.pname}</td>
             <td>${item.bname}</td>
             <td>${item.price}</td>
-            <td><button onclick = "del(${`item.id`})">Delete</button></td>
-            <td><button onclick = "update(${item.id})">Update</button></td>
+            <td><button onclick = "del('${item.id}')">Delete</button></td>
+            <td><button onclick = "update('${item.id}')">Update</button></td>
         </tr>
     `
 ).join(" ");
