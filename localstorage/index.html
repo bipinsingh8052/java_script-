@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <style>
+        .conatiner{
+            height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
+    <div>
+        what is local localStorage
+        <p>Local storage is baseily store your data bediout send the server request <span> when you refers your page your data be not deleted</span>  is bascilly store your data in object form</p>
+        in localStorage have four function 
+        1.setItem();
+        2.getItem();
+        3.removeItem();
+        4.clear();
+        same protocol ans same portand same dominem otherwise this not work.
+    </div>
+    <div class="conatiner">
+        <input type="text" id="name" placeholder="Enter your email" >
+        <input type="text" class="password" placeholder="Enter your password">
+        <input type="text" class="number" placeholder="Enter your number">
+        <button type="submit" id="btn"> submit</button>
+    </div>
     
 </body>
 </html>
