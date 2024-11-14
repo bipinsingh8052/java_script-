@@ -20,14 +20,12 @@
 
 
 
-
-
-    localStorage.setItem("8","hello brother");
-    localStorage.setItem("9","hello broth");
-    localStorage.setItem("arr_bag","dfghjkl");
-    localStorage.removeItem("8");
-    let a= localStorage.getItem("arr_bag");
-    console.log(a);
+    // localStorage.setItem("8","hello brother");
+    // localStorage.setItem("9","hello broth");
+    // localStorage.setItem("arr_bag","dfghjkl");
+    // localStorage.removeItem("8");
+    // let a= localStorage.getItem("arr_bag");
+    // // console.log(a);
 
 
 
@@ -38,10 +36,56 @@
         let a=document.querySelector("#name");
         let b=document.querySelector(".password");
         let c=document.querySelector(".number");
-        console.log(a,b,c);
+        // console.log(a,b,c);
 
             localStorage.setItem('1',JSON.stringify(a.value));
             localStorage.setItem('2',JSON.stringify(b.value));
-            localStorage.setItem('3',JSON.stringify(c.value))
+            localStorage.setItem('3',JSON.stringify(c.value));
+            let m=document.querySelector(".main h1");
+            m.textContent=a.value;
+            let n=document.querySelector(".main h2");
+            n.textContent=b.value;
+            let k =document.querySelector(".main h3");
+            k.textContent=c.value;
+            console.log(m,n,k);
         
     })
+
+ 
+
+
+    
+    let ob={
+        name:"bahcbeuy",
+        email:"bedfghj",
+        tel:567890
+        // ~:"ghj"
+    }
+    // console.log(hasOwnProperty(ob));
+for(k in ob){
+    console.log(k);
+}
+
+for(k in ob){
+    console.log(ob[k]);
+}
+let data;
+let btn2=document.querySelector("#btn2");
+btn2.addEventListener("click",()=>{
+    let obj={
+        name:"bahcbeuy",
+        email:"bedfghj",
+        tel:567890
+    } 
+    let a=document.querySelector("#name_s");
+    let b=document.querySelector(".password_s");
+    let c=document.querySelector(".number_s");
+    // // console.log(a,d,c);
+    // console.log("sdfghjk");
+    obj.name=a.value;
+    obj.email=a.value;
+    obj.tel=a.value;
+    localStorage.setItem("bipin",JSON.stringify(obj));
+})
+// localStorage.setItem('data',${ob});
+// data++;
