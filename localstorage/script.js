@@ -83,9 +83,33 @@ btn2.addEventListener("click",()=>{
     // // console.log(a,d,c);
     // console.log("sdfghjk");
     obj.name=a.value;
-    obj.email=a.value;
-    obj.tel=a.value;
+    obj.email=b.value;
+    obj.tel=c.value;
     localStorage.setItem("bipin",JSON.stringify(obj));
 })
 // localStorage.setItem('data',${ob});
 // data++;
+
+let number= JSON.parse( localStorage.getItem("arr_bag"));
+let numb= JSON.parse(localStorage.getItem("bipin"));
+console.log(number);
+console.log(number[0]);
+console.log(numb.email);
+
+function sbmit(){
+    let obj={
+        name:"bahcbeuy",
+        email:"bedfghj",
+        tel:567890
+    } 
+    let a=document.querySelector(".namein");
+    let b=document.querySelector(".emailin");
+    let c=document.querySelector(".passin");
+    // // console.log(a,d,c);
+    // console.log("sdfghjk");
+    obj.name=a.value;
+    obj.email=b.value;
+    obj.tel=c.value;
+    localStorage.setItem("from",JSON.stringify(obj));
+    // return false;
+}

@@ -24,6 +24,17 @@
             justify-content: center;
             align-items: center;
         }
+        form{
+            border: 1px solid black;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        
         .main{
             height: 400px;
             width: 500px;
@@ -63,6 +74,17 @@
         <input type="text" class="number_s" placeholder="Enter your number">
         <button type="submit" id="btn2"> submit</button>
     </div>
+
+    <form action="./login.html">
+        <h1>Login page</h1>
+        <label for="Name"></label>
+        <input type="text" placeholder="Enter your Name" class="namein">
+        <label for="Email"></label>
+        <input type="email" placeholder="Enter your Email" class="emailin">
+        <label for="Password"></label>
+        <input type="password" placeholder="Enter your password" class="passin">
+        <button type="submit" onclick="sbmit()"> Submit</button>
+    </form>
     
 </body>
 </html>

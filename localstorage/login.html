@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="name"></h1>
+        <h2 class="email"></h2>
+        <h3 class="password">6789</h3>
+    </div>
+    <script>
+        let a =JSON.parse(localStorage.getItem("from"));
+        let b=document.querySelector(".name");
+        let c=document.querySelector(".email");
+        let d=document.querySelector(".password");
+        b.textContent=a.name;
+        c.textContent=a.email;
+        d.textContent=a.tel;
+        console.log(b,c,d)
+    </script>
+</body>
+</html>
