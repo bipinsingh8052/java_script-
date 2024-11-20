@@ -1,10 +1,10 @@
-function delt(id)
+function del(id)
 {
     alert(id);
-    // fetch(`http://localhost:3000/STUDENT/${id}`,{
-    //     method:'DELETE'
-    // })
-    // .then(re=>{return alert("Deleted sucessfully...!!")});
+    fetch(`http://localhost:3000/STUDENT/${id}`,{
+        method:'DELETE'
+    })
+    .then(re=>{return alert("Deleted sucessfully...!!")});
 }
 
 
@@ -18,7 +18,7 @@ async function run(){
         <td>${v.name}</td>
         <td>${v.age}</td>
         <td>${v.address}</td>
-    <td><button onclick= "  delt('${v.id}')">delete </button></td>
+    <td><button onclick = "del('${v.id}')">delete </button></td>
     <td><button>update</button></td>
         </tr>
         `
