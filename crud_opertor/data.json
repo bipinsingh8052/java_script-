@@ -1,0 +1,52 @@
+{
+    "STUDENT":[
+        {
+            "name":"bipin",
+            "age" :78,
+            "address":"kamal nagar"
+        },
+        {
+            "name":"prasant",
+            "age" :78,
+            "address":"anad nagar"
+        }
+        ,
+        {
+            "name":"prasant",
+            "age" :78,
+            "address":"anad nagar"
+        }
+        ,
+        {
+            "name":"prasant",
+            "age" :78,
+            "address":"anad nagar"
+        }
+        ,
+        {
+            "name":"prasant",
+            "age" :78,
+            "address":"anad nagar"
+        },
+        {
+            "name":"prasant",
+            "age" :78,
+            "address":"anad nagar"
+        },
+        {
+            "name":"prasant",
+            "age" :78,
+            "address":"anad nagar"
+        },
+        {
+            "name":"prasant",
+            "age" :78,
+            "address":"anad nagar"
+        },
+        {
+            "name":"prasant",
+            "age" :78,
+            "address":"anad nagar"
+        }
+    ]
+}
